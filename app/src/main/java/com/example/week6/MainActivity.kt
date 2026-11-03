@@ -703,7 +703,7 @@ fun FeaturedGameBanner(
                 .background(
                     Brush.verticalGradient(
                         colors = listOf(
-                            Color(0xFF2C3E50),
+                            SteamSurfaceElevated,
                             SteamDarkSurface
                         )
                     )
