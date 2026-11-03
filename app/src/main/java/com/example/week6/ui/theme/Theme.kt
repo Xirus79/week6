@@ -1,8 +1,8 @@
 package com.example.week6.ui.theme
 
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
@@ -10,11 +10,11 @@ private val SteamDarkColorScheme = darkColorScheme(
     primary = SteamBluePrimary,
     onPrimary = Color.Black,
     primaryContainer = SteamBlueContainer,
-    onPrimaryContainer = SteamBluePrimary,
+    onPrimaryContainer = Color.White,
     secondary = SteamGreenAccent,
-    onSecondary = Color.Black,
+    onSecondary = Color.White,
     secondaryContainer = SteamGreenContainer,
-    onSecondaryContainer = SteamGreenAccent,
+    onSecondaryContainer = Color.White,
     tertiary = SteamGold,
     onTertiary = Color.Black,
     background = SteamDarkBg,
@@ -30,14 +30,16 @@ private val SteamDarkColorScheme = darkColorScheme(
 private val SteamLightColorScheme = lightColorScheme(
     primary = SteamBlueHover,
     onPrimary = Color.White,
-    primaryContainer = Color(0xFFD6EFFF),
+    primaryContainer = Color(0xFFF3E5F5),
     secondary = SteamGreenDark,
     onSecondary = Color.White,
-    background = Color(0xFFF1F5F9),
+    secondaryContainer = Color(0xFFFFE3E8),
+    background = Color(0xFFFAF5FF),
     surface = Color.White,
-    surfaceVariant = Color(0xFFE2E8F0),
-    onSurface = Color(0xFF1E293B),
-    outline = Color(0xFFCBD5E1)
+    surfaceVariant = Color(0xFFF1E6F7),
+    onSurface = Color(0xFF23182C),
+    outline = Color(0xFFD8B4E2),
+    error = SteamSaleRed
 )
 
 @Composable
